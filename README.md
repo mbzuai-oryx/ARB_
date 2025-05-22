@@ -192,13 +192,13 @@ If you use ARB dataset in your research, please consider citing:
 
 ```bibtex
 @misc{ghaboura2025timetravelcomprehensivebenchmark,
-      title={Time Travel: A Comprehensive Benchmark to Evaluate LMMs on Historical and Cultural Artifacts}, 
-      author={Sara Ghaboura and Ketan More and Ritesh Thawkar and Wafa Alghallabi and Omkar Thawakar and Fahad Shahbaz Khan and Hisham Cholakkal and Salman Khan and Rao Muhammad Anwer},
+      title={}, 
+      author={},
       year={2025},
-      eprint={2502.14865},
+      eprint={},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2502.14865}, 
+      url={}, 
 }
 ```
 
