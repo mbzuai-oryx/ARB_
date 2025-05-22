@@ -194,3 +194,14 @@ If you use ARB dataset in your research, please consider citing:
 ```
 
 </div>
+
+
+
+---
+
+
+<p align="center">
+   <img src="assets/IVAL_logo.png" width="18%" style="display: inline-block; margin: 0 10px;" />
+   <img src="assets/Oryx_logo.png" width="10%" style="display: inline-block; margin: 0 10px;" />
+   <img src="assets/MBZUAI_logo.png" width="50%" style="display: inline-block; margin: 0 10px;" />
+</p>
