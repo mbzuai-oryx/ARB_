@@ -204,14 +204,15 @@
         }
 
         
-/*         .logos {
+     .logo_m {
             display: flex;
             justify-content: center;
-            align-items: left;
+            align-items: left;object-fit: contain;
         }
-        .logos img {
-            height: 15px;
-        } */
+        .logo_m img {
+            height: 5px;
+            object-fit: contain;
+        }
         a {
             color: #007bff;
             text-decoration: none;
@@ -338,7 +339,7 @@
      
      /* Style for the Medal Icon 🏅 */
      b {
-         color: #81b09b; /* darkgreen color for medal */
+         color: #436c20; /* darkgreen color for medal */
          font-weight: bold;
      }
      
@@ -457,10 +458,10 @@
                  <h1 class="title3">ARB: A Comprehensive Arabic Multimodal Reasoning Benchmark </h1>
                 <img src="assets/arb_sample_intro.png" alt="ARB Overview">
                 <p class="fig-caption">
-                    <p>
-               <strong>Figure 1. ARB Scope and Diversity </strong>ARB comprises a wide array of multimodal reasoning samples, each combining a visual input with an Arabic question and detailed step-by-step reasoning with actions taken by step. The dataset spans 11 distinct domains, including visual reasoning, OCR and document understanding, chart and diagram interpretation, mathematical and logical inference, scientific and medical analysis, cultural and historical interpretation, remote sensing, agricultural image analysis, and complex visual perception—capturing the linguistic richness, cultural depth, and cross-domain complexity essential for evaluating reasoning in Arabic.
-                </p>
-            </div>
+                    <p><h6><em>
+        <strong>Figure 1. ARB Scope and Diversity </strong>ARB comprises a wide array of multimodal reasoning samples, each combining a visual input with an Arabic question and detailed step-by-step reasoning with actions taken by step. The dataset spans 11 distinct domains, including visual reasoning, OCR and document understanding, chart and diagram interpretation, mathematical and logical inference, scientific and medical analysis, cultural and historical interpretation, remote sensing, agricultural image analysis, and complex visual perception—capturing the linguistic richness, cultural depth, and cross-domain complexity essential for evaluating reasoning in Arabic.
+              </em> </h6>
+        </div>
 
  
     
@@ -478,18 +479,18 @@
                  <h1 class="title3">ARB Construction Pipeline</h1>
                 <img src="assets/arb_pipeline.png" alt="ARBpipeline">
                 <p class="fig-caption">
-                     <p>
+                     <p><h6><em>
                   <strong>Figure 2. ARB Pipeline </strong>The figure illustrates the ARB pipeline for evaluating Arabic multimodal reasoning in LMMs. It begins with data collection across 11 domains—such as medical imaging, historical interpretation, visual reasoning, and agriculture—sourced from curated datasets (e.g., VRC-Bench, CAMEL-Bench), synthetic content, tool-augmented outputs, and web scraping. Data is generated across five categories: English reasoning chains, Arabic Q\&A, English captions, synthetic samples, and tool-enhanced content. Reasoning steps are refined via human-in-the-loop feedback and filtered for logical consistency and cultural alignment. The benchmark supports fine-grained evaluation of open- and closed-source models on Arabic step-by-step reasoning.
-                     </p>
+                        </em> </h6> </p>
                 
         <!-- Collection Figure -->
             <div class="fig-intro section-spacing">
                  <h1 class="title3">ARB Data Collection</h1>
                 <img src="assets/arb_collection.png" alt="ARBcollect">
                 <p class="fig-caption">
-                    <p>
+                    <p><h6><em>
                    <strong>Figure 3. ARB Data Collection </strong>Overview of the ARB Data Collection, Generation and Verification Framework.} The ARB benchmark is constructed from five primary data sources: (1) English reasoning benchmarks, (2) Arabic question–answer benchmarks, (3) English-captioned datasets, (4) Synthetic data, and (5) Tool-augmented data. All data undergoes iterative refinement through human-in-the-loop feedback and validation by native Arabic speakers to ensure cultural and linguistic fidelity.  
-                    </p> 
+                    </em> </h6>  </p> 
 
                     
      <div class="abstract-section section-spacing">
@@ -588,27 +589,29 @@
                  <h1 class="title3">Qualitative Errors in Closed-Source Models</h1>
                 <img src="assets/closed_ex.png" alt="ARBclosed">
                 <p class="fig-caption">
+                    <p><h6><em>
                    <strong>Figure 5. Qualitative Errors in Closed-Source Models. </strong> This figure highlights reasoning failures by closed-source LMMs across various Arabic multimodal tasks. Common issues include incorrect numerical comparisons, invalid assumptions, misinterpreted constraints, and logically inconsistent step sequences. These errors often lead to incorrect conclusions despite the appearance of structured reasoning, underscoring the limitations of current closed models when operating in Arabic.
-                    
+                              </em> </h6>  </p> 
   <!-- Qualitative Errors in Open-Source Models -->
             <div class="fig-intro section-spacing">
                  <h1 class="title3">Qualitative Errors in Open-Source Models</h1>
                 <img src="assets/open_ex.png" alt="ARBopen">
                 <p class="fig-caption">
-      
+      <p><h6><em>
                     <strong>Figure 6. Qualitative Errors in Open-Source Models. </strong>This figure showcases common reasoning flaws in open-source LMMs across diverse Arabic multimodal tasks. Errors include incomplete reasoning steps, inconsistent logic, and hallucinated interpretations not grounded in the input. These issues often result in incorrect answers or unreliable outputs, reflecting the challenges open models face in structured Arabic reasoning.
-                    
+                              </em> </h6>  </p> 
     <!-- Cross-Lingual Reasoning Comparison  -->
             <div class="fig-intro section-spacing">
                  <h1 class="title3"> Cross-Lingual Reasoning Comparison </h1>
                 <img src="assets/comparison.png" alt="ARBcross">
                 <p class="fig-caption">
+                    <p><h6><em>
                    <strong>Figure 7. Cross-Lingual Reasoning Comparison (Arabic vs. English).  </strong>This figure compares LMMs (GPT-4o) reasoning steps in Arabic and English for the same visual task. In the Arabic version, the model misinterprets structural constraints, yellow highlights incorrect assumptions about equal line counts across boxes, green emphasizes miscounted lines within the boxes, and cyan marks an irrelevant search for a box with exactly 4 lines. These reasoning flaws lead to the wrong answer (C). In contrast, the English reasoning is structured, accurate, and constraint-aware, correctly identifying the answer (A), highlighting the performance gap in Arabic.
-                    
+                            </em> </h6>  </p>   
              </div>   
               
  <footer class="footer">
-<!--     <div class="logos">
+ <div>
       <img src="assets/IVAL_logo.png" alt="ival" />
       <img src="assets/Oryx_logo.png" alt="oryx" />
       <img src="assets/MBZUAI_logo.png" alt="mbz" />
