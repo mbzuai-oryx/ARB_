@@ -182,7 +182,7 @@
         }
         /* Top logo in header */
         .logo {
-            height: 40px;
+            height: 50px;
             width: auto;
             display: inline-block;
             margin: 0;
@@ -198,7 +198,7 @@
         }
         
         .logos img {
-            height: 25px;
+            height: 10px;
             width: auto;
             object-fit: contain;
         }
@@ -457,7 +457,8 @@
                  <h1 class="title3">ARB: A Comprehensive Arabic Multimodal Reasoning Benchmark </h1>
                 <img src="assets/arb_sample_intro.png" alt="ARB Overview">
                 <p class="fig-caption">
-               ARB comprises a wide array of multimodal reasoning samples, each combining a visual input with an Arabic question and detailed step-by-step reasoning with actions taken by step. The dataset spans 11 distinct domains, including visual reasoning, OCR and document understanding, chart and diagram interpretation, mathematical and logical inference, scientific and medical analysis, cultural and historical interpretation, remote sensing, agricultural image analysis, and complex visual perception—capturing the linguistic richness, cultural depth, and cross-domain complexity essential for evaluating reasoning in Arabic.
+                    <p>
+               <strong>Figure 1. ARB Scope and Diversity </strong>ARB comprises a wide array of multimodal reasoning samples, each combining a visual input with an Arabic question and detailed step-by-step reasoning with actions taken by step. The dataset spans 11 distinct domains, including visual reasoning, OCR and document understanding, chart and diagram interpretation, mathematical and logical inference, scientific and medical analysis, cultural and historical interpretation, remote sensing, agricultural image analysis, and complex visual perception—capturing the linguistic richness, cultural depth, and cross-domain complexity essential for evaluating reasoning in Arabic.
                 </p>
             </div>
 
@@ -477,32 +478,17 @@
                  <h1 class="title3">ARB Construction Pipeline</h1>
                 <img src="assets/arb_pipeline.png" alt="ARBpipeline">
                 <p class="fig-caption">
-                  The figure illustrates the ARB pipeline for evaluating Arabic multimodal reasoning in LMMs. It begins with data collection across 11 domains—such as medical imaging, historical interpretation, visual reasoning, and agriculture—sourced from curated datasets (e.g., VRC-Bench, CAMEL-Bench), synthetic content, tool-augmented outputs, and web scraping. Data is generated across five categories: English reasoning chains, Arabic Q\&A, English captions, synthetic samples, and tool-enhanced content. Reasoning steps are refined via human-in-the-loop feedback and filtered for logical consistency and cultural alignment. The benchmark supports fine-grained evaluation of open- and closed-source models on Arabic step-by-step reasoning.
+                  <strong>Figure 2. ARB Pipeline </strong>The figure illustrates the ARB pipeline for evaluating Arabic multimodal reasoning in LMMs. It begins with data collection across 11 domains—such as medical imaging, historical interpretation, visual reasoning, and agriculture—sourced from curated datasets (e.g., VRC-Bench, CAMEL-Bench), synthetic content, tool-augmented outputs, and web scraping. Data is generated across five categories: English reasoning chains, Arabic Q\&A, English captions, synthetic samples, and tool-enhanced content. Reasoning steps are refined via human-in-the-loop feedback and filtered for logical consistency and cultural alignment. The benchmark supports fine-grained evaluation of open- and closed-source models on Arabic step-by-step reasoning.
         
         <!-- Collection Figure -->
             <div class="fig-intro section-spacing">
                  <h1 class="title3">ARB Data Collection</h1>
                 <img src="assets/arb_collection.png" alt="ARBcollect">
                 <p class="fig-caption">
-                  Overview of the ARB Data Collection, Generation and Verification Framework.} The ARB benchmark is constructed from five primary data sources: (1) English reasoning benchmarks, (2) Arabic question–answer benchmarks, (3) English-captioned datasets, (4) Synthetic data, and (5) Tool-augmented data. All data undergoes iterative refinement through human-in-the-loop feedback and validation by native Arabic speakers to ensure cultural and linguistic fidelity.  
+                   <strong>Figure 3. ARB Data Collection </strong>Overview of the ARB Data Collection, Generation and Verification Framework.} The ARB benchmark is constructed from five primary data sources: (1) English reasoning benchmarks, (2) Arabic question–answer benchmarks, (3) English-captioned datasets, (4) Synthetic data, and (5) Tool-augmented data. All data undergoes iterative refinement through human-in-the-loop feedback and validation by native Arabic speakers to ensure cultural and linguistic fidelity.  
                     
-         <script>
-               function showFigure() {
-                   // Hide all figures first
-                   document.querySelectorAll('.figure-container-d img').forEach(img => img.style.display = 'none');
-           
-                   // Get the selected value
-                   let selectedFigure = document.getElementById('figureDropdown').value;
-           
-                   // Show the selected figure, or show fig0 if nothing is selected
-                   if (selectedFigure && selectedFigure !== "fig0") {
-                       document.getElementById(selectedFigure).style.display = 'block';
-                   } else {
-                       document.getElementById("fig0").style.display = 'block'; // Show fig0 as default
-                   }
-               }
-           </script>
 
+                    
      <div class="abstract-section section-spacing">
                        <h2 class="title2">Quantitative Evaluation and Results</h2>
                        <p>
@@ -526,18 +512,18 @@
         <tr>
             <td>Final Answer (%)</td>
             <td><b>60.22🏅</b></td>
-            <td><b>52.22</b></td>    
-            <td><b>59.43</b></td>
-            <td><b>58.93</b></td>
-            <td><b>56.70</b></td>
-            <td><b>57.80</b></td>
+            <td>52.22</td>    
+            <td>59.43</td>
+            <td>58.93</td>
+            <td>56.70</td>
+            <td>57.80</td>
         </tr>
         <tr>
             <td>Reasoning Steps (%)</td>
             <td>64.29</td>     
             <td>61.02</td>
             <td>80.41</td>
-            <td>80.75🏅</td>
+            <td><b80.75🏅</b</td>
             <td>64.34</td>
             <td>64.09</td>
         </tr>
@@ -545,13 +531,13 @@
 </table></h5>
 <p>
  <h6>
-       <em>  <strong>Table: Stepwise Evaluation Using LLM-as-Judge- Closed-Source Modles.</strong>  Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.</em>
+       <em>  <strong>Table1: Stepwise Evaluation Using LLM-as-Judge- Closed-Source Modles.</strong>  Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.</em>
  </h6>  
 </p>
 
 <br>
 <br>
-<table>D
+<table>
     <thead>
         <tr style="background-color: #d4ebdb; color: white;">
             <th>Model</th>
@@ -566,19 +552,19 @@
     <tbody>
         <tr>
             <td>Final Answer (%)</td>
-            <td><b>37.02</b></td>     
-            <td><b>25.58</b></td>    
-            <td><b>27.35</b></td>
+            <td>37.02</td>     
+            <td>25.58</td>    
+            <td>27.35</td>
             <td><b>48.52🏅</b></td>
-            <td><b>28.81</b></td>
-            <td><b>31.04</b></td>
+            <td>28.81</td>
+            <td>31.04</td>
         </tr>
         <tr>
             <td>Reasoning Steps (%)</td>
             <td>64.03</td>          
             <td>53.20</td>
             <td>52.77</td>
-            <td>77.70🏅</td>
+            <td><b>77.70🏅</b></td>
             <td>63.64</td>
             <td>54.50</td>
         </tr>
@@ -586,11 +572,42 @@
 </table></h5>
 <p>
  <h6>
-       <em>  <strong>Table: Stepwise Evaluation Using LLM-as-Judge- Open-Source Modles.</strong>  Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.</em>
+       <em>  <strong>Table2: Stepwise Evaluation Using LLM-as-Judge- Open-Source Modles.</strong>  Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.</em>
  </h6>  
 </p>
 </div>
 
+   <div class="abstract-section section-spacing">
+                       <h2 class="title2">Qulitative Examples</h2>
+                       <p>
+                      The following part presents example reasoning steps generated by both closed- and open-source models.<br>
+                        Additional samples highlight the performance gap between models when reasoning in Arabic versus English. 
+                   </div>
+
+                
+  <!-- Qualitative Errors in Closed-Source Models -->
+            <div class="fig-intro section-spacing">
+                 <h1 class="title3">Qualitative Errors in Closed-Source Models</h1>
+                <img src="assets/closed_ex.png" alt="ARBclosed">
+                <p class="fig-caption">
+                   <strong>Figure 5. Qualitative Errors in Closed-Source Models. </strong> This figure highlights reasoning failures by closed-source LMMs across various Arabic multimodal tasks. Common issues include incorrect numerical comparisons, invalid assumptions, misinterpreted constraints, and logically inconsistent step sequences. These errors often lead to incorrect conclusions despite the appearance of structured reasoning, underscoring the limitations of current closed models when operating in Arabic.
+                    
+  <!-- Qualitative Errors in Open-Source Models -->
+            <div class="fig-intro section-spacing">
+                 <h1 class="title3">Qualitative Errors in Open-Source Models</h1>
+                <img src="assets/open_ex.png" alt="ARBopen">
+                <p class="fig-caption">
+      
+                    <strong>Figure 6. Qualitative Errors in Open-Source Models. </strong>This figure showcases common reasoning flaws in open-source LMMs across diverse Arabic multimodal tasks. Errors include incomplete reasoning steps, inconsistent logic, and hallucinated interpretations not grounded in the input. These issues often result in incorrect answers or unreliable outputs, reflecting the challenges open models face in structured Arabic reasoning.
+                    
+    <!-- Cross-Lingual Reasoning Comparison  -->
+            <div class="fig-intro section-spacing">
+                 <h1 class="title3"> Cross-Lingual Reasoning Comparison </h1>
+                <img src="assets/comparison.png" alt="ARBcross">
+                <p class="fig-caption">
+                   <strong>Figure 7. Cross-Lingual Reasoning Comparison (Arabic vs. English).  </strong>This figure compares LMMs (GPT-4o) reasoning steps in Arabic and English for the same visual task. In the Arabic version, the model misinterprets structural constraints, yellow highlights incorrect assumptions about equal line counts across boxes, green emphasizes miscounted lines within the boxes, and cyan marks an irrelevant search for a box with exactly 4 lines. These reasoning flaws lead to the wrong answer (C). In contrast, the English reasoning is structured, accurate, and constraint-aware, correctly identifying the answer (A), highlighting the performance gap in Arabic.
+                    
+                
 <footer class="footer">
         <div class="logos">
             <img src="assets/IVAL_logo.png" alt="ival">
