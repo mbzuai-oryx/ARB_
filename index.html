@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ARB: A Comprehensive Arabic Multimodal Reasoning Benchmark<br></title>
+    <link rel="icon" type="image/png" href="assets/arab_logo.png">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+   <link rel="stylesheet" href="style.css">
+
+    <style>
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 18px;
+            border-radius: 30px; 
+            background-color: #222; /* Dark color */
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #fcf4a2; /* Yellow on hover */
+        }
+
+        .button .icon {
+            margin-right: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .fig-container img {
+            max-width: 65%; /* Reduced from 80% */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        .fig-container-side {
+            text-align: center;
+            margin: 0px 0;
+        }
+        .fig-container-side img:first-child {
+            width: 50%;
+            margin: 0 2%;
+            display: inline-block;
+        }
+        .fig-container-side img:last-child {
+            width: 40%;
+            margin: 0 2%;
+            display: inline-block;
+        }
+        p {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        ul {
+            display: inline-block;
+            text-align: left;
+            margin: 0 auto;
+        }
+        .publication-authors {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .citation {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Adjust spacing between logo and title */
+    }
+    
+        /* Adjust logo size */
+        .logo {
+            width: 60px; /* Adjust size as needed */
+            height: auto;
+            margin: 0;
+            display: inline-block;
+        }
+        
+        /* Ensure title aligns properly */
+        .title {
+            font-size: 3em;
+            margin: 0;
+            background: linear-gradient(to right, #333333, #666666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-family: Geneva, Tahoma, sans-serif;
+    }
+        .title2 {
+            font-size: 2em;
+            margin: 0px 0;
+            background: linear-gradient(to right, #585858, #666666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family:Geneva, Tahoma, sans-serif
+        }
+         .title3 {
+            font-size: 1.5em;
+            margin: 0px 0;
+            background: linear-gradient(to right, #585858, #666666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family:Geneva, Tahoma, sans-serif
+        }
+        .authors {
+           font-size: 18px;
+            margin: 20px 0;
+        }
+        .fig-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .fig-container img {
+            max-width: 60%;
+            height: auto;
+        }
+       .figure-container-d {
+          text-align: center;
+          display: flex;
+          justify-content: center;  /* Centers the image horizontally */
+          align-items: center;      /* Centers vertically if needed */
+          margin: 30px auto;
+          min-height: 300px;        /* Ensures space is reserved */
+      }
+      
+      .figure-container-d img {
+          max-width: 60%;
+         display: none;  /* Hide all figures initially */
+      }
+
+     .figure-container-d img {
+          max-width: 60%;
+          display: none; /* Hide all figures initially */
+           }
+      #fig0 {
+               display: block; /* Ensure fig0 is visible by default */
+           }
+     
+        .fig-container-s {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .fig-container-s img {
+            max-width: 40%;
+        }
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #e0e0e0;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+        }
+        .logos img {
+            height: 15px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .citation {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    
+       
+     .fig-container-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+        .fig-container-side img {
+            max-width: 45%;
+            height: auto;
+        }
+        .button img {
+            height: 20px;
+            margin-right: 8px;
+        }
+    
+        .fig-intro {
+            text-align: center;
+            margin: 30px auto;
+            max-width: 900px; /* Ensure the figure and caption share the same width */
+
+        }
+        
+        .fig-intro img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+         .fig-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+            max-width: 900px; /* Match figure width */
+        }
+
+        
+        /* Style for the abstract section */
+        .abstract-section {
+            background-color: #eeeeee; /* Light gray color */
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 3000px;
+            border-radius: 8px;
+        }
+        
+        .abstract-section p {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        /* Add space between major sections */
+        .section-spacing {
+            margin-top: 100px; /* Adjust space between sections */
+            margin-bottom: 40px;
+        }
+
+        /* Dropdown styling */
+        .dropdown-container {
+            text-align: center;
+            margin: 30px auto;
+        }
+        .dropdown-container select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+     
+     div {
+    text-align: center;
+   }
+     /* Table Styles */
+     table {
+         width: 80%;
+         border-collapse: collapse;
+         margin: 20px auto;
+         font-size: 16px;
+     }
+     
+     /* Table Headers */
+     th {
+         background-color: #ebd9b3;
+         color: white;
+         padding: 10px;
+         text-align: center;
+     }
+     
+     /* Table Rows */
+     td {
+         padding: 10px;
+         border: 1px solid #ddd;
+         text-align: center;
+     }
+     
+     /* Alternate Row Colors */
+     tbody tr:nth-child(odd) {
+         background-color: #f9f9f9;
+     }
+     
+     /* Add hover effect */
+     tbody tr:hover {
+         background-color: #e8e8e8;
+     }
+     
+     /* Style for the Medal Icon 🏅 */
+     b {
+         color: #d4af37; /* Gold color for medal */
+         font-weight: bold;
+     }
+     
+     /* Caption Styling */
+     h6 em {
+         display: block;
+         font-size: 14px;
+         font-style: italic;
+         margin-top: 10px;
+     }
+ 
+     /* Table Styles */
+     table {
+         width: 80%;
+         border-collapse: collapse;
+         margin: 20px auto;
+         font-size: 16px;
+     }
+     
+     /* Table Headers */
+     th {
+         background-color: #EBD9B3;
+         color: white;
+         padding: 10px;
+         text-align: center;
+     }
+     
+     /* Table Rows */
+     td {
+         padding: 10px;
+         border: 1px solid #ddd;
+         text-align: center;
+     }
+     
+     /* Alternate Row Colors */
+     tbody tr:nth-child(odd) {
+         background-color: #f9f9f9;
+     }
+     
+     /* Add hover effect */
+     tbody tr:hover {
+         background-color: #e8e8e8;
+     }
+     
+     /* Style for the Medal Icon 🏅 */
+     b {
+         color: #d4af37; /* Gold color for medal */
+         font-weight: bold;
+     }
+     
+     /* Caption Styling */
+     h6 em {
+         display: block;
+         font-size: 14px;
+         font-style: italic;
+         margin-top: 10px;
+     }
+        
+    </style>
+</head>
+<body>
+           <div class="header-container">
+                <img src="assets/arab_logo.png" alt="logo" class="logo">
+                <h1 class="title">ARB</h1>
+            </div>
+            <h1 class="title2">A Comprehensive Arabic Reasoning Benchmark</h1>
+            <!-- Authors -->
+            <div class="authors">
+                <p>
+                    Sara Ghaboural<sup style="color:#3399FF;">1*</sup>, 
+                    Ketan More<sup style="color:#3399FF;">1*</sup>, 
+                    Wafa Alghallabi<sup style="color:#3399FF;">1</sup>, 
+                    Omkar Thawakar<sup style="color:#3399FF;">1</sup>, 
+                    Jorma Laaksonen<sup style="color:#FF66B3">2</sup>, <br>
+                    Hisham Cholakkal<sup style="color:#3399FF;">1, </sup>
+                    Salman Khan<sup style="color:#3399FF;">1, </sup><sup style="color:#4CB5AE;">3</sup>,
+                    Rao M. Anwer<sup style="color:#3399FF;">1, </sup><sup style="color:#FF66B3;">2</sup>,
+                </p>
+                <p>
+                    <sup style="color:#3399FF;">1</sup>Mohamed bin Zayed University of AI, 
+                     <sup style="color:#FF66B3;">2</sup>Aalto University
+                    <sup style="color:#4CB5AE;">3</sup>Australian National University,
+                </p>
+            </div>
+
+            <div class="publication-links has-text-centered">
+                <span class="link-block">
+                    <a href="https://github.com/SLMLAH/ARB/blob/page/assets/ARB-21-05-2025.pdf" class="external-link button">
+                        <img src="assets/pdf.png" alt="PDF">
+                        <span>Paper</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                    <a href="https://arxiv.org/abs/2502.14865" class="external-link button">
+                        <img src="assets/arxiv_1.png" alt="arXiv">
+                        <span>arXiv</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                    <a href="https://github.com/mbzuai-oryx/ARB." class="external-link button">
+                        <img src="assets/git_1.png" alt="GitHub">
+                        <span>Code</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                    <a href="https://huggingface.co/datasets/MBZUAI/ARB" class="external-link button">
+                        <span class="icon" style="font-size:18px">🤗</span>
+                        <span>Dataset</span>
+                        </a>
+                    </span>
+            </div>
+    
+          
+            <!-- Introductory Figure -->
+            <div class="fig-intro section-spacing">
+                 <h1 class="title3">ARB: A Comprehensive Arabic Multimodal Reasoning Benchmark </h1>
+                <img src="assets/arb_sample_intro.png" alt="ARB Overview">
+                <p class="fig-caption">
+               ARB comprises a wide array of multimodal reasoning samples, each combining a visual input with an Arabic question and detailed step-by-step reasoning with actions taken by step. The dataset spans 11 distinct domains, including visual reasoning, OCR and document understanding, chart and diagram interpretation, mathematical and logical inference, scientific and medical analysis, cultural and historical interpretation, remote sensing, agricultural image analysis, and complex visual perception—capturing the linguistic richness, cultural depth, and cross-domain complexity essential for evaluating reasoning in Arabic.
+                </p>
+            </div>
+
+ 
+    
+            
+            <!-- Abstract Section -->
+            <div class="abstract-section section-spacing">
+                <h2 class="title2">Abstract</h2>
+                <p>
+                   As Large Multimodal Models (LMMs) become more capable, there is growing interest in evaluating their reasoning processes alongside their final outputs. However, most benchmarks remain focused on English, overlooking languages with rich linguistic and cultural contexts, such as Arabic. To address this gap, we introduce the Comprehensive Arabic Multimodal Reasoning Benchmark (ARB), the first benchmark designed to evaluate step-by-step reasoning in Arabic across both textual and visual modalities. ARB spans 11 diverse domains, including visual reasoning, document understanding, OCR, scientific analysis, and cultural interpretation. It comprises 1,356 multimodal samples paired with 5,119 human-curated reasoning steps and corresponding actions. We evaluated 12 state-of-the-art open- and closed-source LMMs and found persistent challenges in coherence, faithfulness, and cultural grounding. ARB offers a structured framework for diagnosing multimodal reasoning in underrepresented languages and marks a critical step toward inclusive, transparent, and culturally aware AI systems. We release the benchmark, rubric, and code to support future research and reproducibility.
+                </p>
+            </div>
+    
+            <!-- Pipeline Figure -->
+            <div class="fig-intro section-spacing">
+                 <h1 class="title3">ARB Construction Pipeline</h1>
+                <img src="assets/arb_pipeline.png" alt="ARBpipeline">
+                <p class="fig-caption">
+                  The figure illustrates the ARB pipeline for evaluating Arabic multimodal reasoning in LMMs. It begins with data collection across 11 domains—such as medical imaging, historical interpretation, visual reasoning, and agriculture—sourced from curated datasets (e.g., VRC-Bench, CAMEL-Bench), synthetic content, tool-augmented outputs, and web scraping. Data is generated across five categories: English reasoning chains, Arabic Q\&A, English captions, synthetic samples, and tool-enhanced content. Reasoning steps are refined via human-in-the-loop feedback and filtered for logical consistency and cultural alignment. The benchmark supports fine-grained evaluation of open- and closed-source models on Arabic step-by-step reasoning.
+        
+        <!-- Collection Figure -->
+            <div class="fig-intro section-spacing">
+                 <h1 class="title3">ARB Data Collection</h1>
+                <img src="assets/arb_collection.png" alt="ARBcollect">
+                <p class="fig-caption">
+                  Overview of the ARB Data Collection, Generation and Verification Framework.} The ARB benchmark is constructed from five primary data sources: (1) English reasoning benchmarks, (2) Arabic question–answer benchmarks, (3) English-captioned datasets, (4) Synthetic data, and (5) Tool-augmented data. All data undergoes iterative refinement through human-in-the-loop feedback and validation by native Arabic speakers to ensure cultural and linguistic fidelity.  
+                    
+         <script>
+               function showFigure() {
+                   // Hide all figures first
+                   document.querySelectorAll('.figure-container-d img').forEach(img => img.style.display = 'none');
+           
+                   // Get the selected value
+                   let selectedFigure = document.getElementById('figureDropdown').value;
+           
+                   // Show the selected figure, or show fig0 if nothing is selected
+                   if (selectedFigure && selectedFigure !== "fig0") {
+                       document.getElementById(selectedFigure).style.display = 'block';
+                   } else {
+                       document.getElementById("fig0").style.display = 'block'; // Show fig0 as default
+                   }
+               }
+           </script>
+
+     <div class="abstract-section section-spacing">
+                       <h2 class="title2">Quantitative Evaluation and Results</h2>
+                       <p>
+                      The following table shows the stepwise evaluation using LLM-as-Judge over various multimodal models on the ARB benchmark.
+                   </div>
+
+
+<footer class="footer">
+        <div class="logos">
+            <img src="assets/IVAL_logo.png" alt="ival">
+            <img src="assets/Oryx_logo.png" alt="oryx">
+            <img src="assets/MBZUAI_logo.png" alt="mbz">
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a
+                            href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
