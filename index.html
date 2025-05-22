@@ -515,10 +515,16 @@
                 <img src="assets/arb_collection.png" alt="ARBcollect">
                 <p class="fig-caption">
                     <p><h6><em>
-                   <strong>Figure 3. ARB Data Collection </strong>Overview of the ARB Data Collection, Generation and Verification Framework.} The ARB benchmark is constructed from five primary data sources: (1) English reasoning benchmarks, (2) Arabic question–answer benchmarks, (3) English-captioned datasets, (4) Synthetic data, and (5) Tool-augmented data. All data undergoes iterative refinement through human-in-the-loop feedback and validation by native Arabic speakers to ensure cultural and linguistic fidelity.  
+                   <strong>Figure 3. Domain Distribution in ARB.</strong> The figure shows the distribution of ARB samples across 11 domains. Math & Logic (41%) and Charts, Diagrams, & Tables (24%) dominate, reflecting the dataset’s emphasis on structured reasoning. Other domains, including Social & Cultural, Scientific, and Medical, add thematic diversity.
+
+ <!-- Collection Distribution  -->
+            <div class="fig-intro section-spacing">
+                 <h1 class="title3">ARB Data Distribution</h1>
+                <img src="assets/arb_dist.png" alt="ARBcollect">
+                <p class="fig-caption">
+                    <p><h6><em>
+                   <strong>Figure 4. ARB Data Collection </strong>Overview of the ARB Data Collection, Generation and Verification Framework.} The ARB benchmark is constructed from five primary data sources: (1) English reasoning benchmarks, (2) Arabic question–answer benchmarks, (3) English-captioned datasets, (4) Synthetic data, and (5) Tool-augmented data. All data undergoes iterative refinement through human-in-the-loop feedback and validation by native Arabic speakers to ensure cultural and linguistic fidelity.  
                     </em> </h6>  </p> 
-
-
                     
      <div class="abstract-section section-spacing">
              <h2 class="title2">Quantitative Evaluation and Results</h2>
@@ -531,7 +537,7 @@
                 <img src="assets/arb_rubric.png" alt="ARBclosed">
                 <p class="fig-caption">
                     <p><h6><em>
-                   <strong>Figure 4. Arabic Reasoning Evaluation Metrics.</strong>  We assess step-by-step reasoning using five core Arabic-specific dimensions: Faithfulness (At-Tat¯abuq), Informativeness (Al-Ithr¯a’ Al-Ma’l¯um¯at¯ı), Coherence (At-Taw¯afuq), Commonsense (Al-Mantiq Al-’A¯mm), and Reasoning Alignment (At-Tawa¯fuq Al-Istidla¯l¯ı). Auxiliary checks cover hallucinations, redundancy, semantic gaps, and missing steps. Metrics are defined at the step and/or token level. The full evaluation rubric is provided in English in Appendix E.
+                   <strong>Figure 5. Arabic Reasoning Evaluation Metrics.</strong>  We assess step-by-step reasoning using five core Arabic-specific dimensions: Faithfulness (At-Tat¯abuq), Informativeness (Al-Ithr¯a’ Al-Ma’l¯um¯at¯ı), Coherence (At-Taw¯afuq), Commonsense (Al-Mantiq Al-’A¯mm), and Reasoning Alignment (At-Tawa¯fuq Al-Istidla¯l¯ı). Auxiliary checks cover hallucinations, redundancy, semantic gaps, and missing steps. Metrics are defined at the step and/or token level. The full evaluation rubric is provided in English in Appendix E.
 </em></h6> </p>
                 
 <h5>
@@ -627,7 +633,7 @@
                 <img src="assets/closed_ex.png" alt="ARBclosed">
                 <p class="fig-caption">
                     <p><h6><em>
-                   <strong>Figure 5. Qualitative Errors in Closed-Source Models. </strong> This figure highlights reasoning failures by closed-source LMMs across various Arabic multimodal tasks. Common issues include incorrect numerical comparisons, invalid assumptions, misinterpreted constraints, and logically inconsistent step sequences. These errors often lead to incorrect conclusions despite the appearance of structured reasoning, underscoring the limitations of current closed models when operating in Arabic.
+                   <strong>Figure 6. Qualitative Errors in Closed-Source Models. </strong> This figure highlights reasoning failures by closed-source LMMs across various Arabic multimodal tasks. Common issues include incorrect numerical comparisons, invalid assumptions, misinterpreted constraints, and logically inconsistent step sequences. These errors often lead to incorrect conclusions despite the appearance of structured reasoning, underscoring the limitations of current closed models when operating in Arabic.
                               </em> </h6>  </p> 
   <!-- Qualitative Errors in Open-Source Models -->
             <div class="fig-intro section-spacing">
@@ -635,7 +641,7 @@
                 <img src="assets/open_ex.png" alt="ARBopen">
                 <p class="fig-caption">
       <p><h6><em>
-                    <strong>Figure 6. Qualitative Errors in Open-Source Models. </strong>This figure showcases common reasoning flaws in open-source LMMs across diverse Arabic multimodal tasks. Errors include incomplete reasoning steps, inconsistent logic, and hallucinated interpretations not grounded in the input. These issues often result in incorrect answers or unreliable outputs, reflecting the challenges open models face in structured Arabic reasoning.
+                    <strong>Figure 7. Qualitative Errors in Open-Source Models. </strong>This figure showcases common reasoning flaws in open-source LMMs across diverse Arabic multimodal tasks. Errors include incomplete reasoning steps, inconsistent logic, and hallucinated interpretations not grounded in the input. These issues often result in incorrect answers or unreliable outputs, reflecting the challenges open models face in structured Arabic reasoning.
                               </em> </h6>  </p> 
     <!-- Cross-Lingual Reasoning Comparison  -->
             <div class="fig-intro section-spacing">
@@ -643,7 +649,7 @@
                 <img src="assets/comparison.png" alt="ARBcross">
                 <p class="fig-caption">
                     <p><h6><em>
-                   <strong>Figure 7. Cross-Lingual Reasoning Comparison (Arabic vs. English).  </strong>This figure compares LMMs (GPT-4o) reasoning steps in Arabic and English for the same visual task. In the Arabic version, the model misinterprets structural constraints, yellow highlights incorrect assumptions about equal line counts across boxes, green emphasizes miscounted lines within the boxes, and cyan marks an irrelevant search for a box with exactly 4 lines. These reasoning flaws lead to the wrong answer (C). In contrast, the English reasoning is structured, accurate, and constraint-aware, correctly identifying the answer (A), highlighting the performance gap in Arabic.
+                   <strong>Figure 8. Cross-Lingual Reasoning Comparison (Arabic vs. English).  </strong>This figure compares LMMs (GPT-4o) reasoning steps in Arabic and English for the same visual task. In the Arabic version, the model misinterprets structural constraints, yellow highlights incorrect assumptions about equal line counts across boxes, green emphasizes miscounted lines within the boxes, and cyan marks an irrelevant search for a box with exactly 4 lines. These reasoning flaws lead to the wrong answer (C). In contrast, the English reasoning is structured, accurate, and constraint-aware, correctly identifying the answer (A), highlighting the performance gap in Arabic.
                             </em> </h6>  </p>   
              </div>   
               
