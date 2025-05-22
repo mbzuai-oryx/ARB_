@@ -436,10 +436,9 @@
  
             <!-- Abstract Section -->
             <div class="abstract-section section-spacing">
-                <h2 class="title2">Abstract</h2>
+                <h2 class="title2">Overview</h2>
                 <p>
-                   As Large Multimodal Models (LMMs) become more capable, there is growing interest in evaluating their reasoning processes alongside their final outputs. However, most benchmarks remain focused on English, overlooking languages with rich linguistic and cultural contexts, such as Arabic. To address this gap, we introduce the Comprehensive Arabic Multimodal Reasoning Benchmark (ARB), the first benchmark designed to evaluate step-by-step reasoning in Arabic across both textual and visual modalities. ARB spans 11 diverse domains, including visual reasoning, document understanding, OCR, scientific analysis, and cultural interpretation. It comprises 1,356 multimodal samples paired with 5,119 human-curated reasoning steps and corresponding actions. We evaluated 12 state-of-the-art open- and closed-source LMMs and found persistent challenges in coherence, faithfulness, and cultural grounding. ARB offers a structured framework for diagnosing multimodal reasoning in underrepresented languages and marks a critical step toward inclusive, transparent, and culturally aware AI systems. We release the benchmark, rubric, and code to support future research and reproducibility.
-                </p>
+The Comprehensive Arabic Multimodal Reasoning Benchmark (ARB) is the first benchmark designed to evaluate step-by-step reasoning in Arabic across both textual and visual modalities. Covering 11 diverse domains, ARB includes 1,356 multimodal samples and 5,119 curated reasoning steps. It provides a structured framework to assess the capabilities of open- and closed-source large multimodal models (LMMs), addressing gaps in coherence, cultural grounding, and faithfulness often overlooked in benchmarks focused solely on English.                </p>
             </div>
     
             <!-- Pipeline Figure -->
@@ -490,46 +489,50 @@
 <br>
 <br>
                 
-<h5>
-<div class="fig-intro section-spacing">
-<table>
+
+<div style="width:80%; margin: 0 auto;">
+  <table>
     <thead>
-        <tr style="background-color:  #e2edec; color: white;">
-            <th>Model</th>
-            <th>GPT-4o</th>
-            <th>GPT-4o-min</th>
-            <th>GPT-4.1</th>
-            <th>o4-mini</th>
-            <th>Gemini 1.5 Pro</th>
-            <th>Gemini 2.0 Flash</th>
-        </tr>
+      <tr style="background-color: #c5d9d9; color: white;">
+        <th>Model</th>
+        <th>GPT-4o</th>
+        <th>GPT-4o-min</th>
+        <th>GPT-4.1</th>
+        <th>o4-mini</th>
+        <th>Gemini 1.5 Pro</th>
+        <th>Gemini 2.0 Flash</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Final Answer (%)</td>
-            <td><b>60.22🏅</b></td>
-            <td>52.22</td>    
-            <td>59.43</td>
-            <td>58.93</td>
-            <td>56.70</td>
-            <td>57.80</td>
-        </tr>
-        <tr>
-            <td>Reasoning Steps (%)</td>
-            <td>64.29</td>     
-            <td>61.02</td>
-            <td>80.41</td>
-            <td><b>80.75🏅</b</td>
-            <td>64.34</td>
-            <td>64.09</td>
-        </tr>
+      <tr>
+        <td>Final Answer (%)</td>
+        <td><b>60.22🏅</b></td>
+        <td>52.22</td>    
+        <td>59.43</td>
+        <td>58.93</td>
+        <td>56.70</td>
+        <td>57.80</td>
+      </tr>
+      <tr>
+        <td>Reasoning Steps (%)</td>
+        <td>64.29</td>     
+        <td>61.02</td>
+        <td>80.41</td>
+        <td><b>80.75🏅</b></td>
+        <td>64.34</td>
+        <td>64.09</td>
+      </tr>
     </tbody>
-</table></h5>
-<p class="fig-caption">
- <h6>
-       <em>  <strong>Table1: Stepwise Evaluation Using LLM-as-Judge- Closed-Source Modles.</strong>  Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.</em>
- </h6>  
-</p>
+  </table>
+
+  <h6 style="text-align: center; font-style: italic; margin-top: 10px;">
+    <em>
+      <strong>Table 1: Stepwise Evaluation Using LLM-as-Judge – Closed-Source Models.</strong>
+      Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.
+    </em>
+  </h6>
+</div>
+
 
 <br>
 <br>
