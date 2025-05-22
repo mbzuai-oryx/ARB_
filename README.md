@@ -212,5 +212,5 @@ If you use ARB dataset in your research, please consider citing:
 <p align="center">
    <img src="assets/IVAL_logo.png" width="18%" style="display: inline-block; margin: 0 10px;" />
    <img src="assets/Oryx_logo.jpeg" width="12%" style="display: inline-block; margin: 0 10px;" />
-   <img src="assets/MBZUAI_logo.png" width="30%" style="display: inline-block; margin: 0 10px;" />
+   <img src="assets/MBZUAI_logo.png" width="40%" style="display: inline-block; margin: 0 10px;" />
 </p>
