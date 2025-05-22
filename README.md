@@ -121,6 +121,15 @@ ARB  is the first benchmark focused on  step-by-step reasoning in Arabic cross b
 
 <br>
 
+## 📥 Download
+
+```bash
+from datasets import load_dataset
+
+# Login using e.g. `huggingface-cli login` to access this dataset
+ds = load_dataset("MBZUAI/ARB")
+```
+
 ## 🧪 Evaluation Protocol
 <div>
 <p align="left">
