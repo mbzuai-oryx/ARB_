@@ -180,14 +180,38 @@
         th {
             background-color: #e0e0e0;
         }
+        /* Top logo in header */
+        .logo {
+            height: 40px;
+            width: auto;
+            display: inline-block;
+            margin: 0;
+        }
+        
+        /* Footer logos */
         .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* spacing between logos */
+            margin: 20px 0;
+        }
+        
+        .logos img {
+            height: 25px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        
+/*         .logos {
             display: flex;
             justify-content: center;
             align-items: left;
         }
         .logos img {
             height: 15px;
-        }
+        } */
         a {
             color: #007bff;
             text-decoration: none;
@@ -488,120 +512,83 @@
 <h5>
 <table>
     <thead>
-        <tr style="background-color: #a52a2a; color: white;">
+        <tr style="background-color: #c5d9d9; color: white;">
             <th>Model</th>
-            <th>India</th>
-            <th>Roman Emp.</th>
-            <th>China</th>
-            <th>British Isles</th>
-            <th>Iran</th>
-            <th>Iraq</th>
-            <th>Japan</th>
-            <th>Cent. America</th>
-            <th>Greece</th>
-            <th>Egypt</th>
+            <th>GPT-4o</th>
+            <th>GPT-4o-min</th>
+            <th>GPT-4.1</th>
+            <th>o4-mini</th>
+            <th>Gemini 1.5 Pro</th>
+            <th>Gemini 2.0 Flash</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>GPT-4o-0806</td>
-            <td><b>0.2491🏅</b></td>
-            <td><b>0.4463🏅</b></td>
-            <td><b>0.2491🏅</b></td>
-            <td><b>0.1899🏅</b></td>
-            <td><b>0.3522🏅</b></td>
-            <td><b>0.3545🏅</b></td>
-            <td><b>0.2228🏅</b></td>
-            <td><b>0.3144🏅</b></td>
-            <td><b>0.2757🏅</b></td>
-            <td><b>0.3649🏅</b></td>
+            <td>Final Answer (%)</td>
+            <td><b>60.22🏅</b></td>
+            <td><b>52.22</b></td>    
+            <td><b>59.43</b></td>
+            <td><b>58.93</b></td>
+            <td><b>56.70</b></td>
+            <td><b>57.80</b></td>
         </tr>
         <tr>
-            <td>Gemini-2.0-Flash</td>
-            <td>0.1859</td>
-            <td>0.3358</td>
-            <td>0.2059</td>
-            <td>0.1556</td>
-            <td>0.3376</td>
-            <td>0.3071</td>
-            <td>0.2000</td>
-            <td>0.2677</td>
-            <td>0.2582</td>
-            <td>0.3602</td>
-        </tr>
-        <tr>
-            <td>Gemini-1.5-Pro</td>
-            <td>0.1118</td>
-            <td>0.2632</td>
-            <td>0.2139</td>
-            <td>0.1545</td>
-            <td>0.3320</td>
-            <td>0.2587</td>
-            <td>0.1871</td>
-            <td>0.2708</td>
-            <td>0.2088</td>
-            <td>0.2908</td>
-        </tr>
-        <tr>
-            <td>GPT-4o-mini-0718</td>
-            <td>0.2311</td>
-            <td>0.3612</td>
-            <td>0.2207</td>
-            <td>0.1866</td>
-            <td>0.2991</td>
-            <td>0.2632</td>
-            <td>0.2087</td>
-            <td>0.3195</td>
-            <td>0.2101</td>
-            <td>0.2501</td>
-        </tr>
-        <tr>
-            <td>Llama-3.2-Vision-Inst</td>
-            <td>0.0744</td>
-            <td>0.1450</td>
-            <td>0.1227</td>
-            <td>0.0777</td>
-            <td>0.2000</td>
-            <td>0.1155</td>
-            <td>0.1075</td>
-            <td>0.1553</td>
-            <td>0.1351</td>
-            <td>0.1201</td>
-        </tr>
-        <tr>
-            <td>Qwen-2.5-VL</td>
-            <td>0.0888</td>
-            <td>0.1578</td>
-            <td>0.1192</td>
-            <td>0.1713</td>
-            <td>0.2515</td>
-            <td>0.1576</td>
-            <td>0.1771</td>
-            <td>0.1442</td>
-            <td>0.1442</td>
-            <td>0.2660</td>
-        </tr>
-        <tr>
-            <td>Llava-Next</td>
-            <td>0.0788</td>
-            <td>0.0961</td>
-            <td>0.1455</td>
-            <td>0.1091</td>
-            <td>0.1464</td>
-            <td>0.1194</td>
-            <td>0.1353</td>
-            <td>0.1917</td>
-            <td>0.1111</td>
-            <td>0.0709</td>
+            <td>Reasoning Steps (%)</td>
+            <td>64.29</td>     
+            <td>61.02</td>
+            <td>80.41</td>
+            <td>80.75🏅</td>
+            <td>64.34</td>
+            <td>64.09</td>
         </tr>
     </tbody>
 </table></h5>
 <p>
  <h6>
-       <em>  <strong>Table:</strong> Analysis of LLM-Judge evaluation of various models in describing archaeological artifacts across civilizations from different geographical locations.</em>
+       <em>  <strong>Table: Stepwise Evaluation Using LLM-as-Judge- Closed-Source Modles.</strong>  Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.</em>
  </h6>  
 </p>
 
+<br>
+<br>
+<table>D
+    <thead>
+        <tr style="background-color: #d4ebdb; color: white;">
+            <th>Model</th>
+            <th>Qwen2.5VL-7b</th>
+            <th>Llama-3.2-11B-Vis-Inst.</th>
+            <th>AIN</th>
+            <th>Llama-4-Scout-17Bx16E</th>
+            <th>Aya-Vision-8B</th>
+            <th>InternVl3-8B</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Final Answer (%)</td>
+            <td><b>37.02</b></td>     
+            <td><b>25.58</b></td>    
+            <td><b>27.35</b></td>
+            <td><b>48.52🏅</b></td>
+            <td><b>28.81</b></td>
+            <td><b>31.04</b></td>
+        </tr>
+        <tr>
+            <td>Reasoning Steps (%)</td>
+            <td>64.03</td>          
+            <td>53.20</td>
+            <td>52.77</td>
+            <td>77.70🏅</td>
+            <td>63.64</td>
+            <td>54.50</td>
+        </tr>
+    </tbody>
+</table></h5>
+<p>
+ <h6>
+       <em>  <strong>Table: Stepwise Evaluation Using LLM-as-Judge- Open-Source Modles.</strong>  Comparison of closed-weight models based on final answer accuracy and aggregated quality scores of reasoning steps, using our LLM-as-Judge framework with Arabic prompts and evaluation metrics. The evaluation follows a reference-based, attribute-level protocol for assessing reasoning quality.</em>
+ </h6>  
+</p>
 </div>
 
 <footer class="footer">
