@@ -60,7 +60,7 @@
   
 <div align="left">
   
-## <img src="https://github.com/user-attachments/assets/42ae8138-bee1-414b-be7c-60378afdbc34" width="30" height="30" /> ARB Scope and Diversity
+## <img src="https://github.com/user-attachments/assets/4e69bf65-7b6e-4dd4-8eda-d38b9f1049fc" width="40" height="40" /> ARB Scope and Diversity
  
 
 ARB  is the first benchmark focused on  step-by-step reasoning in Arabic cross both textual and visual modalities, covering 11 diverse domains spanning science, culture, OCR, and historical interpretation.
@@ -92,14 +92,22 @@ ARB  is the first benchmark focused on  step-by-step reasoning in Arabic cross b
 
 <br>
 
-## 🗂️ ARB Collection
+## <img src="https://github.com/user-attachments/assets/626aedcd-fdb0-4a1f-87de-bad0574900e5" width="30" height="30" /> ARB Collection
 
 <p align="center">
    <img src="assets/arb_collection.png" width="600px" height="300px" alt="Figure: ARB Collection"/>
 
 
+</p>
+<br>
 
-### 🔢 Source Types Across Domains
+## <img src="https://github.com/user-attachments/assets/bdd52751-8503-4b30-9a85-e4e17f69242c" width="30" height="30" /> ARB Distribution
+
+<p align="center">
+   <img src="assets/arb_dist.png" width="400px" height="350px" alt="Figure: ARB dist"/>
+</p>
+
+### Source Types Across Domains
 
 | Domain                    | English Bench | Arabic Bench | Human-Created | Synthetic |
 | ------------------------- | ------------- | ------------ | ------------- | --------- |
@@ -108,19 +116,9 @@ ARB  is the first benchmark focused on  step-by-step reasoning in Arabic cross b
 | Chart/Table Understanding | ✓             | ✓            | ✓             | ✓         |
 | Visual Reasoning          | ✓             | –            | –             | –         |
 | Historical Understanding  | ✓             | –            | ✓             | ✓         |
-
-</p>
 <br>
 
-## 🗂️ ARB Distribution
-
-<p align="center">
-   <img src="assets/arb_dist.png" width="400px" height="350px" alt="Figure: ARB dist"/>
-</p>
-
-<br>
-
-## 📥 Download
+## <img src="" width="30" height="30" />  Download
 
 ```bash
 from datasets import load_dataset
@@ -129,7 +127,7 @@ from datasets import load_dataset
 ds = load_dataset("MBZUAI/ARB")
 ```
 
-## 🧪 Evaluation Protocol
+## <img src="https://github.com/user-attachments/assets/b9105099-639c-4411-8949-9fc4b7f6b86a" width="30" height="30" />  Evaluation Protocol
 <div>
 <p align="left">
   
@@ -185,8 +183,9 @@ Each sample includes:
 
 <br>
 <div align="left">
-  
-## 📚 Citation
+
+
+## <img src="https://github.com/user-attachments/assets/08e47f66-e0aa-49b5-b886-ad65ae7a6faa" width="30" height="30" /> Citation
 If you use ARB dataset in your research, please consider citing:
 
 ```bibtex
