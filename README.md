@@ -147,8 +147,7 @@ We evaluated 12 open- and closed-source LMMs using:</p>
 - **Cross-lingual semantic alignment**: LaBSE</p>
 - **Custom Rubric (Arabic):**: Our curated metric rebric includes 10 factors like faithfulness, interpretive depth, coherence, hallucination, and more.</p>
 
-
-### 🎯 LLM-as-Judge (Arabic prompt-based)
+### <img src="https://github.com/user-attachments/assets/9a10bc39-78ff-41d8-97f8-7cef32df518e" width="30" height="30" /> LLM-as-Judge (Arabic prompt-based)
 
 We evaluate models using:
 
@@ -159,7 +158,7 @@ We evaluate models using:
 </div>
 <br>
 
-## 🏆 Stepwise Evaluation Results 
+## <img src="https://github.com/user-attachments/assets/508bcdab-08e2-48e0-b89f-94b76190fdc0" width="30" height="30"> Stepwise Evaluation Results 
 For Closed-Source Models:<br>
 |                     |   GPT-4o |   GPT-4o-mini |   GPT-4.1 |   o4-mini |   Gemini 1.5 Pro |   Gemini 2.0 Flash |
 |:--------------------|---------:|--------------:|----------:|----------:|-----------------:|-------------------:|
