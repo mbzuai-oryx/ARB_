@@ -74,13 +74,12 @@ ARB  is the first benchmark focused on  step-by-step reasoning in Arabic cross b
 
 ## 🌟 Key Features
 
-- Includes **1,356** multimodal samples with **5,119** curated reasoning steps.
-- Spans **11 diverse domains**, from visual reasoning to historical and scientific analysis.
-- Emphasizes **step-by-step reasoning**, beyond just final answer prediction.
-- Each sample contains a **chain of 2–6+ reasoning steps** aligned to human logic.
-- Curated and verified by **native Arabic speakers** and **domain experts** for linguistic and cultural fidelity.
-- Built from **hybrid sources**: original Arabic data, high-quality translations, and synthetic samples.
-- Features a **robust evaluation framework** measuring both final answer accuracy and reasoning quality.
+- **1,356** multimodal samples, each with an image, Arabic question, and reasoning-based answer.
+- **5,119** curated reasoning steps reflecting human logic
+- **11 diverse domains**, from visual reasoning to historical and scientific analysis.
+- **Native Arabic speakers** and **domain experts** verified.
+- **Hybrid sources**: original Arabic data, high-quality translations, and synthetic samples.
+- **Robust evaluation framework** for final answer accuracy and reasoning quality
 - Fully **open-source dataset** and toolkit to support research in **Arabic reasoning and multimodal AI**.
 
 <br>
