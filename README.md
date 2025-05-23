@@ -101,21 +101,31 @@ ARB  is the first benchmark focused on  step-by-step reasoning in Arabic cross b
 </p>
 <br>
 
-## <img src="https://github.com/user-attachments/assets/bdd52751-8503-4b30-9a85-e4e17f69242c" width="30" height="30" /> ARB Distribution
+## <img src="https://github.com/user-attachments/assets/bdd52751-8503-4b30-9a85-e4e17f69242c" width="30" height="30" /> ARB Data Distribution over Domains
 
 <p align="center">
    <img src="assets/arb_dist.png" width="400px" height="350px" alt="Figure: ARB dist"/>
 </p>
 
+<div align="center">
+  
 ### Source Types Across Domains
 
-| Domain                    | English Bench | Arabic Bench | Human-Created | Synthetic |
-| ------------------------- | ------------- | ------------ | ------------- | --------- |
-| Math & Logic              | ✓             | –            | –             | ✓         |
-| Remote Sensing            | –             | ✓            | –             | ✓         |
-| Chart/Table Understanding | ✓             | ✓            | ✓             | ✓         |
-| Visual Reasoning          | ✓             | –            | –             | –         |
-| Historical Understanding  | ✓             | –            | ✓             | ✓         |
+| **Domain**                 | **English Bench** | **Arabic Bench** | **Human-Created** | **Synthetic** |
+|---------------------------|:-----------------:|:----------------:|:-----------------:|:-------------:|
+| Visual Reasoning          | ✅                | –                | –                 | –             |
+| OCR & Document Analysis   | –                 | –                | ✅                | ✅            |
+| Chart & Data Table (CDT)  | ✅                | ✅               | ✅                | ✅            |
+| Math & Logic              | ✅                | –                | –                 | –             |
+| Social & Cultural         | ✅                | –                | –                 | –             |
+| Computer Vision Perception| ✅                | –                | –                 | –             |
+| Medical Image Analysis    | ✅                | ✅               | –                 | –             |
+| Scientific Reasoning      | ✅                | –                | –                 | –             |
+| Agricultural Interpretation | ✅              | –                | ✅                | ✅            |
+| Remote Sensing Understanding | –             | ✅               | –                 | –             |
+| Historical & Anthropological | ✅            | –                | ✅                | ✅            |
+
+</div>
 <br>
 
 ## <img src="" width="30" height="30" />  Download
