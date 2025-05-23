@@ -52,7 +52,7 @@
 
 ##  <img src="https://github.com/user-attachments/assets/1abcf195-ad44-4500-a14b-f1a4bef9b748" width="40" height="40" />Latest Updates
  🔥  **[22 May 2025]** ARB is **1st** Arabic multimodal benchmark focused on step-by-step reasoning is released.<br>
- 🤗  **[22 May 2025]** ARB dataset available on [HuggingFace](https://huggingface.co/datasets/MBZUAI/TimeTravel).<br>
+ 🤗  **[22 May 2025]** ARB dataset available on [HuggingFace](https://huggingface.co/datasets/MBZUAI/ARB).<br>
 
 <br>
 <br>
