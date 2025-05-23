@@ -199,14 +199,14 @@ Each sample includes:
 If you use ARB dataset in your research, please consider citing:
 
 ```bibtex
-@misc{ghaboura2025timetravelcomprehensivebenchmark,
-      title={}, 
-      author={},
+@misc{ghaboura2025arbcomprehensivearabicmultimodal,
+      title={ARB: A Comprehensive Arabic Multimodal Reasoning Benchmark}, 
+      author={Sara Ghaboura and Ketan More and Wafa Alghallabi and Omkar Thawakar and Jorma Laaksonen and Hisham Cholakkal and Salman Khan and Rao Muhammad Anwer},
       year={2025},
-      eprint={},
+      eprint={2505.17021},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={}, 
+      url={https://arxiv.org/abs/2505.17021}, 
 }
 ```
 
