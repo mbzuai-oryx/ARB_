@@ -22,7 +22,7 @@
   <em> <sup> *Equal Contribution  </sup> </em>
   <br>
   <br>  
-  [![arXiv](https://img.shields.io/badge/arXiv-2502.14865-C4EAE5)](https://arxiv.org/abs/2502.14865)
+  [![arXiv](https://img.shields.io/badge/arXiv-2502.14865-C4EAE5)](https://arxiv.org/abs/2505.17021)
   [![Our Page](https://img.shields.io/badge/Visit-Our%20Page-C5D9D9?style=flat)](https://mbzuai-oryx.github.io/ARB/)
   [![GitHub issues](https://img.shields.io/github/issues/mbzuai-oryx/Camel-Bench?color=D8EADC&label=issues&style=flat)](https://github.com/mbzuai-oryx/ARB/issues)
   [![GitHub stars](https://img.shields.io/github/stars/mbzuai-oryx/TimeTravel?color=C7D7E3&style=flat)](https://github.com/mbzuai-oryx/ARB/stargazers)
